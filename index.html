@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <title>Multiplication Table</title>
-</head>
-<body>
-    <h2 id="Table"></h2>
+  </head>
+  <body>
+    <!-- Container for the heading and about my project section -->
+    <div class="container">
+      <!-- Heading for the multiplication table, Gets information from javascript to know which table it is -->
+      <div class="heading">
+        <h1 id="TableName"></h1>
+      </div>
+      <!-- About my project section -->
+      <div id="about">
+        <p>
+          Done By: Celeste Garcia
+          <br />Class: 4 Science <br />Date: 12/6/2025 <br />Subject: Computer
+          Programming
+        </p>
+      </div>
+    </div>
+    <!-- Output section for displaying the equation and product -->
+    <div class="output">
+      <!-- Displays the equation -->
+      <div class="box" id="equation"></div>
 
-    <!-- Div to display the output -->
-    <div id="output"></div>
-</body>
+      <!-- Displays the product -->
+      <div class="box" id="product"></div>
+    </div>
+  </body>
 
-<!-- Link to the external JavaScript file -->
-<script src="script.js"></script> 
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
 </html>

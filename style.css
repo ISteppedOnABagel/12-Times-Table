@@ -1,12 +1,152 @@
-h2 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+/*{
+  border: 1px solid black;
+}*/
+
+body {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5px;
+  animation: coloring 4s infinite ease-in-out;
 }
 
-output {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.6;
+.container {
+  display: inline-block;
+  margin: auto;
+  margin-right: 15px;
+}
+
+.heading {
+  padding: 30px;
+  width: 30vw;
+  word-wrap: break-word;
+  object-fit: contain;
+  border-radius: 10px;
+  background-image: url(Calculator-and-Budget-banner-image.jpg);
+}
+
+/* style for heading text */
+#TableName {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4vw;
+  font-weight: bold;
+  color: white;
+  margin: auto;
+  border-radius: 10px;
+  background-color: black;
+}
+
+#about {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2;
+  color: black;
+  margin-top: 20px;
+  padding: 15px;
+  border: 3px dotted black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* stlyes for the output box, which contains the equation and product */
+.output {
+  /* Font and Text Style*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 2;
+
+  /* Box Style */
+  margin: 5% auto;
+  margin-left: 15px;
+  display: inline-block;
+  width: fit-content;
+  height: auto;
+  padding: 40px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: white;
+
+  /* Animation Style */
+  transition: 0.3s ease-in-out;
+  animation: float 2s infinite;
+}
+
+/* Hover effect for output box */
+.output:hover {
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.329);
+}
+
+/* class selector that styles both the equation and product boxes */
+.box {
+  display: table-cell;
+  width: fit-content;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: left;
+  animation: pulse 2s infinite;
+}
+
+/* id selector that styles only the equation box */
+#equation {
+  padding-right: 20px;
+}
+
+/* Animation effects*/
+
+/* Defines the pulse animation, shrinks and enlarges */
+@keyframes pulse {
+  from {
+    transform: scale(1); /* Starting position */
+  }
+  50% {
+    transform: scale(1.1); /* Middle position */
+  }
+  to {
+    transform: scale(1); /* Ending position */
+  }
+}
+
+/* Defines the float animation, moves it up and down on its y axis*/
+@keyframes float {
+  from {
+    transform: translateY(0); /* Starting position */
+  }
+  50% {
+    transform: translateY(-10%); /* Middle position */
+  }
+  to {
+    transform: translateY(0); /* Ending position */
+  }
+}
+
+/* Defines the coloring animation, changes color */
+@keyframes coloring {
+  0% {
+    background-color: rgba(255, 0, 0, 0.438); /* Starting color */
+  }
+  20% {
+    background-color: rgba(255, 255, 0, 0.438); /* Middle color*/
+  }
+  40% {
+    background-color: rgba(9, 255, 0, 0.438); /* Ending color*/
+  }
+  50% {
+    background-color: rgba(0, 247, 255, 0.438); /* Ending color*/
+  }
+
+  60% {
+    background-color: rgba(25, 0, 255, 0.438); /* Ending color*/
+  }
+
+  80% {
+    background-color: rgba(255, 0, 221, 0.438); /* Ending color*/
+  }
+
+  100% {
+    background-color: rgba(255, 0, 0, 0.438); /* Ending color*/
+  }
 }
