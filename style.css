@@ -12,12 +12,14 @@ body {
   background-image: url(Calculator-and-Budget-banner-image.jpg);
 }
 
+/* Container that holds both my header and about information*/
 .container {
   display: inline-block;
   margin: auto;
   margin-right: 15px;
 }
 
+/* Div containing my heading text*/
 .heading {
   padding: 10px;
   width: 30vw;
@@ -37,6 +39,7 @@ body {
   border-radius: 10px;
 }
 
+/* style for about my project */
 #about {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -128,21 +131,21 @@ body {
     background-color: rgb(255, 0, 0); /* Starting color */
   }
   20% {
-    background-color: rgb(255, 255, 0); /* Middle color*/
+    background-color: rgb(255, 255, 0); 
   }
   40% {
-    background-color: rgb(9, 255, 0); /* Ending color*/
+    background-color: rgb(9, 255, 0); 
   }
   50% {
-    background-color: rgb(0, 247, 255); /* Ending color*/
+    background-color: rgb(0, 247, 255); 
   }
 
   60% {
-    background-color: rgb(25, 0, 255); /* Ending color*/
+    background-color: rgb(25, 0, 255); 
   }
 
   80% {
-    background-color: rgb(255, 0, 221); /* Ending color*/
+    background-color: rgb(255, 0, 221);
   }
 
   100% {
