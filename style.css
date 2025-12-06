@@ -9,7 +9,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 5px;
-  animation: coloring 4s infinite ease-in-out;
+  background-image: url(Calculator-and-Budget-banner-image.jpg);
 }
 
 .container {
@@ -19,12 +19,12 @@ body {
 }
 
 .heading {
-  padding: 30px;
+  padding: 10px;
   width: 30vw;
   word-wrap: break-word;
-  object-fit: contain;
   border-radius: 10px;
-  background-image: url(Calculator-and-Budget-banner-image.jpg);
+  opacity: 0.9;
+  animation: coloring 4s infinite ease-in-out, pulse 2s infinite;
 }
 
 /* style for heading text */
@@ -32,10 +32,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 4vw;
   font-weight: bold;
-  color: white;
+  color: black;
   margin: auto;
   border-radius: 10px;
-  background-color: black;
 }
 
 #about {
@@ -47,7 +46,7 @@ body {
   color: black;
   margin-top: 20px;
   padding: 15px;
-  border: 3px dotted black;
+  border: 3px solid black;
   border-radius: 10px;
   background-color: white;
 }
@@ -126,27 +125,27 @@ body {
 /* Defines the coloring animation, changes color */
 @keyframes coloring {
   0% {
-    background-color: rgba(255, 0, 0, 0.438); /* Starting color */
+    background-color: rgb(255, 0, 0); /* Starting color */
   }
   20% {
-    background-color: rgba(255, 255, 0, 0.438); /* Middle color*/
+    background-color: rgb(255, 255, 0); /* Middle color*/
   }
   40% {
-    background-color: rgba(9, 255, 0, 0.438); /* Ending color*/
+    background-color: rgb(9, 255, 0); /* Ending color*/
   }
   50% {
-    background-color: rgba(0, 247, 255, 0.438); /* Ending color*/
+    background-color: rgb(0, 247, 255); /* Ending color*/
   }
 
   60% {
-    background-color: rgba(25, 0, 255, 0.438); /* Ending color*/
+    background-color: rgb(25, 0, 255); /* Ending color*/
   }
 
   80% {
-    background-color: rgba(255, 0, 221, 0.438); /* Ending color*/
+    background-color: rgb(255, 0, 221); /* Ending color*/
   }
 
   100% {
-    background-color: rgba(255, 0, 0, 0.438); /* Ending color*/
+    background-color: rgb(255, 0, 0); /* Ending color*/
   }
 }
